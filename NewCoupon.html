@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/" />
+<title>NewCoupon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">NewCoupon</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Welcome admin</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='accordion']//span[.=&quot;eShop&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='collapseOne']//span[.=&quot;Coupons&quot;]</td>
+	<td>Coupons</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='collapseOne']//span[.=&quot;Coupons&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='collapseOne']//span[.=&quot;Coupons&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Coupon</td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>//div[@id='content']/a[@class=&quot;btn btn-primary pull-right&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='content']/a[@class=&quot;btn btn-primary pull-right&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Create coupon</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>test-tatapla 2016/04/02</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=discount_amount</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=valid_date</td>
+	<td>2016-04-24</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.alert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>× SuccessCoupon test-tatapla 2016/04/02 created</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//table[@class=&quot;table table-striped table-bordered&quot;]//td</td>
+	<td>test-tatapla 2016/04/02</td>
+</tr>
+</tbody></table>
+</body>
+</html>
